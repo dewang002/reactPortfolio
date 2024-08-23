@@ -1,10 +1,10 @@
-import img1 from "../../public/movie app.jpg"
+import img1 from "../../public/movie app.webp"
 import img2 from "../../public/food.jpg"
 import img3 from "../../public/refokus website.png"
 import img4 from "../../public/obyes website.png"
 import img5 from "../../public/sidecup website.png"
 import img6 from "../../public/two good co.png"
-import img7 from "../../public/weight.jpg"
+import img7 from "../../public/weight.webp"
 
 export const projectData = [
 {
