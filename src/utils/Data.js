@@ -15,13 +15,6 @@ export const projectData = [
     category:"web"
 },
 {
-    id:2,
-    image: img2,
-    link:'https://dewang002.github.io/obys-clone/',
-    title:"Food App",
-    category:"web"
-},
-{
     id:3,
     image: img3,
     link:'https://dewang002.github.io/refokus-react-/' ,
@@ -33,6 +26,13 @@ export const projectData = [
     image: img6,
     link:'https://dewang002.github.io/two-good-co-clon-/' ,
     title:"To good co",
+    category:"web"
+},
+{
+    id:2,
+    image: img2,
+    link:'https://dewang002.github.io/Burger_app/',
+    title:"Food App",
     category:"web"
 },
 {

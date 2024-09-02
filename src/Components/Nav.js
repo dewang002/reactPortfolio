@@ -15,7 +15,7 @@ function Nav() {
     }
 
   return (
-    <div className="relative md:fixed z-[999] md:h-20 md:w-[80%] md:ml-[10%] rounded-b-lg h-14 drop-shadow-xl bg-zinc-700 md:bg-gradient-to-br from-[#000000] via-[grey] to-black  mx-auto  pr-6 md:pr-9 pl-6 cursor-default ">
+    <div className=" fixed z-[999] md:h-20 w-full md:w-[80%] md:ml-[10%] rounded-b-lg h-14 drop-shadow-xl bg-zinc-700 md:bg-gradient-to-br from-[#000000] via-[grey] to-black  mx-auto  pr-6 md:pr-9 pl-6 cursor-default ">
       <nav className="h-full w-full flex justify-between items-center ">
          <h1 className=" h-10 w-10 bg-gradient-to-br from-[#D0E677] via-white to-[#b8d252] rounded-full flex items-center justify-center text-xl font-black text-black">D</h1>
 
@@ -34,10 +34,10 @@ function Nav() {
            <IoMdClose />
          </div>
           <ul className="h-full w-full flex flex-col items-center justify-center gap-4 ">
-            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white">Home</li>
-            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white">About</li>
-            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white">Skill</li>
-            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white">Contact</li>
+            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#home">HOME</a></li>
+            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#about">ABOUT</a></li>
+            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#skill">SKILL</a></li>
+            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#contact">CONTACT</a></li>
            </ul>
         </div> :<div className="toggle-btn md:hidden text-white text-2xl " onClick={()=>handleclick()}>
           <CiMenuKebab />
