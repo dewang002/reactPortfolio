@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import profile from "../../public/picofme.png";
-import resume from "../../public/DewangresumeGoogleDocs.pdf";
+import resume from "../../public/dewangresume.pdf";
 
 function About() {
   const [loading, setloading] = useState(false);
