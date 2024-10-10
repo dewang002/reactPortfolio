@@ -42,6 +42,18 @@ function Frontendskill() {
             <span className='text-[4.4vw] font-light  md:text-[1vw] text-zinc-400'>Intermediate</span>
            </div>
          </div>
+         <div className='skill-data'>
+           <div>
+            <h3  className='text-[5vw] md:text-[1.4vw] font-medium '>REDUX</h3>
+            <span className='text-[4.4vw] font-light  md:text-[1vw] text-zinc-400'>Intermediate</span>
+           </div>
+         </div>
+         <div className='skill-data'>
+           <div>
+            <h3  className='text-[5vw] md:text-[1.4vw] font-medium '>DSA</h3>
+            <span className='text-[4.4vw] font-light  md:text-[1vw] text-zinc-400'>Medium</span>
+           </div>
+         </div>
 
       </div>
     </div>

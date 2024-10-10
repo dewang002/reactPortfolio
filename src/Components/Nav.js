@@ -20,10 +20,10 @@ function Nav() {
 
         <div className="hidden md:block w-[60%] md:w-[50%]">
           <ul className="grid grid-cols-5 items-center gap-8">
-            <Link to="about">
+            <Link to="/about">
             <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#about">About</a> </li>
             </Link>
-            <Link to='work'>
+            <Link to='/work'>
             <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#work">Work</a> </li>
             </Link>
             <Link to='/skill'>
@@ -40,10 +40,19 @@ function Nav() {
            <IoMdClose />
          </div>
           <ul className="h-full w-full flex flex-col items-center justify-center gap-4 ">
-            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#home">HOME</a></li>
+            
+            <Link to='/about'>
             <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#about">ABOUT</a></li>
+            </Link>
+            <Link to='/work'>
+            <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#about">PROJECT</a></li>
+            </Link>
+            <Link to='/skill'>
             <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#skill">SKILL</a></li>
+            </Link>
+            <Link to='/contact'>
             <li className="font-semibold text-3xl  text-zinc-300 active:scale-95 hover:text-white" onClick={()=>handleclosebtn()}><a href="#contact">CONTACT</a></li>
+            </Link>
            </ul>
         </div> :<div className="toggle-btn md:hidden text-white text-2xl " onClick={()=>handleclick()}>
           <CiMenuKebab />

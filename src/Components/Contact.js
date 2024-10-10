@@ -31,14 +31,14 @@ function Contact() {
   };
 
   return (
-    <div id='contact' className='h-[100vh] md:h-[60vh] md:w-[60%] w-full mx-auto p-10'>
+    <div id='contact' className='h-[100vh] md:h-[60vh] md:w-[60%] w-full mx-auto md:p-10 pt-8 md:pt-10 mb-10'>
     <Link
-        className=" absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all"
+        className="relative -translate-y-8 md:-translate-y-0  ml-4 bg-blue-500 py-3 px-4 rounded text-white active:scale-75 duration-100 transition-all"
         onClick={() => navigate(-1)}
       >
         <button className="font-bold text-lg ">Back</button>
       </Link>
-      <div className='flex flex-col md:leading-[4vw] leading-[8vw] mb-8 md:mb-0'>
+      <div className='flex flex-col md:leading-[4vw] leading-[8vw] mt-10 mb-8 md:mb-0'>
          <h1 className='text-center text-[10vw] md:text-[3.4vw] tracking-tighter font-semibold'>Get In Touch</h1>
       <span className='text-lg text-center text-zinc-500'>contact me</span>
       </div>

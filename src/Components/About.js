@@ -13,8 +13,13 @@ function About() {
     }, 3000);
   };
   return (
-    <div id="about" className="md:min-h-[50vh] h-[100vh] bg-zinc-300 w-full flex flex-col items-center cursor-default">
-       <Link className="-translate-x-[28vw] translate-y-5 absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all" onClick={()=>navigate(-1)}><button className='font-bold text-lg '>Back</button></Link> 
+    <div id="about" className="relative md:min-h-[50vh] h-[100vh] pt-14 md:pt-10 pb-10 bg-zinc-300 w-full flex flex-col items-center cursor-default">
+      <Link
+        className="-translate-x-[34vw] -translate-y-[14vw] md:-translate-y-0  absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all"
+        onClick={() => navigate(-1)}
+      >
+        <button className="font-bold text-lg ">Back</button>
+      </Link>
       <h1 className="text-[10vw] md:text-[3.5vw] font-semibold tracking-tighter">
         About Me
       </h1>

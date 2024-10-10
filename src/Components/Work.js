@@ -5,14 +5,14 @@ import { Link, useNavigate } from 'react-router-dom';
 function Work() {
   const navigate = useNavigate();
   return (
-    <div id='work' className="pt-5 px-10 md:pb-16 w-[100%] h-[100vh] bg-zinc-300 mx-auto ">
+    <div id='work' className="pt-5 md:pt-10 px-10 md:pb-16 w-[100%] h-[100vh] bg-zinc-300 mx-auto ">
     <Link
-        className=" absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all"
+        className="relative md:ml-28 -translate-x-[34vw]  -translate-y-[14vw] md:-translate-y-0 bg-blue-500 py-3 px-4 rounded text-white active:scale-75 duration-100 transition-all"
         onClick={() => navigate(-1)}
       >
         <button className="font-bold text-lg ">Back</button>
       </Link>
-      <h1 className="text-center text-[10vw] md:text-[3.5vw] pb-8 font-semibold ">
+      <h1 className="uppercase text-center text-[10vw] md:text-[3.5vw] pb-8 font-semibold mt-10 md:mt-0">
         Projects
       </h1>
       <div className="flex items-center justify-center flex-wrap gap-10">

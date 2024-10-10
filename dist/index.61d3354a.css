@@ -256,6 +256,10 @@ img, video {
   position: absolute;
 }
 
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0;
 }
@@ -297,12 +301,24 @@ img, video {
   margin-right: auto;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .ml-\[16vw\] {
   margin-left: 16vw;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-\[20vw\] {
@@ -389,10 +405,6 @@ img, video {
   height: 100%;
 }
 
-.h-\[120vh\] {
-  height: 120vh;
-}
-
 .w-10 {
   width: 2.5rem;
 }
@@ -441,13 +453,18 @@ img, video {
   width: 100%;
 }
 
-.-translate-x-\[28vw\] {
-  --tw-translate-x: -28vw;
+.-translate-x-\[34vw\] {
+  --tw-translate-x: -34vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.translate-y-5 {
-  --tw-translate-y: 1.25rem;
+.-translate-y-8 {
+  --tw-translate-y: -2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[14vw\] {
+  --tw-translate-y: -14vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -685,6 +702,10 @@ img, video {
   padding-bottom: .75rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-2 {
   padding-bottom: .5rem;
 }
@@ -729,16 +750,24 @@ img, video {
   padding-right: 1.5rem;
 }
 
-.pt-10 {
-  padding-top: 2.5rem;
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .pt-\[0\] {
   padding-top: 0;
+}
+
+.pt-\[20vw\] {
+  padding-top: 20vw;
 }
 
 .pt-\[4vh\] {
@@ -821,6 +850,10 @@ img, video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-5 {
@@ -1002,8 +1035,20 @@ img, video {
     margin-left: 10%;
   }
 
+  .md\:mt-0 {
+    margin-top: 0;
+  }
+
   .md\:mt-\[10vw\] {
     margin-top: 10vw;
+  }
+
+  .md\:ml-20 {
+    margin-left: 5rem;
+  }
+
+  .md\:ml-28 {
+    margin-left: 7rem;
   }
 
   .md\:block {
@@ -1086,6 +1131,11 @@ img, video {
     width: 8vw;
   }
 
+  .md\:-translate-y-0 {
+    --tw-translate-y: -0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:translate-x-\[0vw\] {
     --tw-translate-x: 0vw;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1093,6 +1143,21 @@ img, video {
 
   .md\:translate-y-\[3vw\] {
     --tw-translate-y: 3vw;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-translate-x-\[34vw\] {
+    --tw-translate-x: -34vw;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-translate-x-\[40vw\] {
+    --tw-translate-x: -40vw;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:translate-x-\[40vw\] {
+    --tw-translate-x: 40vw;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1152,8 +1217,16 @@ img, video {
     padding-right: 5vw;
   }
 
+  .md\:pt-10 {
+    padding-top: 2.5rem;
+  }
+
   .md\:pt-\[12vw\] {
     padding-top: 12vw;
+  }
+
+  .md\:pt-\[20vw\] {
+    padding-top: 20vw;
   }
 
   .md\:text-start {
