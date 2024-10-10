@@ -4,7 +4,9 @@ import { MdArrowOutward } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { Link, useNavigate } from 'react-router-dom';
 function Contact() {
+  const navigate = useNavigate();
   const form = useRef();
   const [item,setitem]=useState(false)
 
@@ -29,7 +31,13 @@ function Contact() {
   };
 
   return (
-    <div id='contact' className=' h-[100vh] md:h-[60vh] md:w-[60%] w-full mx-auto '>
+    <div id='contact' className='h-[100vh] md:h-[60vh] md:w-[60%] w-full mx-auto p-10'>
+    <Link
+        className=" absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all"
+        onClick={() => navigate(-1)}
+      >
+        <button className="font-bold text-lg ">Back</button>
+      </Link>
       <div className='flex flex-col md:leading-[4vw] leading-[8vw] mb-8 md:mb-0'>
          <h1 className='text-center text-[10vw] md:text-[3.4vw] tracking-tighter font-semibold'>Get In Touch</h1>
       <span className='text-lg text-center text-zinc-500'>contact me</span>
@@ -53,11 +61,11 @@ function Contact() {
 
        </div>
        {/* -------------------------------------------------- */}
-       <form ref={form} onSubmit={sendEmail} className='p-10 flex flex-col gap-4 items-center '>
-        <h2 className='md:text-[1.5vw] md:pb-3 text-center leading-7 text-[6vw] tracking-tighter font-medium'>Write me your project</h2>
-         <input type='text' name='name' placeholder='Name...' className='p-2 w-full outline-none rounded-lg text-xl' />
-         <input type='text' name="email" placeholder='Email@gmail.com' className='p-2 w-full outline-none rounded-lg text-xl' />
-         <textarea type='text' name='project' placeholder='Send you project Idea' cols='30' rows='10' className='p-4 w-full outline-none rounded-lg' />
+       <form ref={form} onSubmit={sendEmail} className='drop-shadow-xl p-10 flex flex-col gap-4 items-center '>
+        <h2 className='md:text-[1.5vw] md:pb-3 text-zinc-600 text-center leading-7 text-[6vw] tracking-tighter font-medium'>Write me your project</h2>
+         <input type='text' name='name' placeholder='Name...' className=' p-2 w-full outline-none rounded-lg text-xl' />
+         <input type='text' name="email" placeholder='Email@gmail.com' className=' p-2 w-full outline-none rounded-lg text-xl' />
+         <textarea type='text' name='project' placeholder='Send you project Idea' cols='30' rows='10' className='p-4 w-full outline-none rounded-lg ' />
          <button onClick={emptyBox} type='submit' className='transition duration-150 ease-in active:scale-95 text-xl p-4 bg-black rounded-lg text-white'>{item?"sending...":"send"}</button>
        </form>
       </div>

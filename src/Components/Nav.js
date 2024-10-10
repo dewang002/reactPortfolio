@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-
-import Home from "../Components/Home"
 import { CiMenuKebab } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+
 function Nav() {
     const [mobilenav,setmobilenav]=useState(false)
 
@@ -19,13 +18,20 @@ function Nav() {
       <nav className="h-full w-full flex justify-between items-center ">
          <h1 className=" h-10 w-10 bg-gradient-to-br from-[#D0E677] via-white to-[#b8d252] rounded-full flex items-center justify-center text-xl font-black text-black">D</h1>
 
-        <div className="hidden md:block w-[40%] md:w-[50%]">
-          <ul className="grid grid-cols-4 items-center gap-8">
-            
-            <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#home" >Home</a></li>
+        <div className="hidden md:block w-[60%] md:w-[50%]">
+          <ul className="grid grid-cols-5 items-center gap-8">
+            <Link to="about">
             <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#about">About</a> </li>
+            </Link>
+            <Link to='work'>
+            <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#work">Work</a> </li>
+            </Link>
+            <Link to='/skill'>
             <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#skill">Skill</a> </li>
+            </Link>
+            <Link to='/contact'>
             <li className="font-semibold text-lg text-white hover:underline tracking-wide"><a href="#contact">Contact</a> </li>
+            </Link>
           </ul>
         </div>
         {/* -------------------mobileversion------------------------ */}

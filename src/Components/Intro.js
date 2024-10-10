@@ -17,7 +17,7 @@ function Intro() {
           life.
         </p>
       </div>
-      <button className="ml-[16vw] md:ml-[0vw] md:hover:bg-slate-600 active:scale-95 duration-150 md:text-[1vw] text-[4vw] font-semibold bg-black text-white md:w-[8vw] w-[34vw]  p-4 rounded-md">Say Hello</button>
+      <button className="ml-[16vw] md:ml-[0vw] md:hover:bg-slate-600 active:scale-95 duration-150 md:text-[1vw] text-[4vw] font-semibold bg-black text-white md:w-[8vw] w-[34vw]  p-4 rounded-md"> <a href="https://www.linkedin.com/in/dewang-thapa-714491239/" target="_blank">Say Hello</a> </button>
     </div>
   );
 }

@@ -5,6 +5,7 @@ import Intro from './Intro'
 import Socials from './Socials'
 import profile from "../../public/picofme.png";
 import { useRef } from 'react';
+import Nav from './Nav';
 function Home() {
   const elementRef = useRef(null);
 
@@ -19,7 +20,10 @@ function Home() {
   }, []);
 
   return (
+    <>
+      <Nav />
     <div id='home' className='cursor-default h-[91vh] w-[80%] mb-8 mx-auto grid md:grid-cols-12 grid-row-12 justify-center items-center'>
+      
       <div className='col-span-2'>
         <Socials />
       </div>
@@ -33,6 +37,7 @@ function Home() {
       </div>
       <div  className='translate-y-[-100%] md:translate-y-[3vw] md:translate-x-[0vw] h-[15vw] w-[8vw] md:h-[2.5vw] md:w-[1.5vw] border-[2px] border-zinc-900 rounded-full flex items-start justify-center '> <div ref={elementRef} className=" font-  bold" >|</div></div>
     </div>
+    </>
   )
 }
 

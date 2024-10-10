@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import profile from "../../public/picofme.png";
 import resume from "../../public/dewangresume.pdf";
+import { Link, useNavigate } from 'react-router-dom';
 
 function About() {
   const [loading, setloading] = useState(false);
+  const navigate = useNavigate();
   const downloadcv = () => {
     setloading(true);
     setTimeout(() => {
@@ -11,7 +13,8 @@ function About() {
     }, 3000);
   };
   return (
-    <div id="about" className="md:min-h-[50vh] min-h-[170vh] w-full flex flex-col items-center cursor-default">
+    <div id="about" className="md:min-h-[50vh] h-[100vh] bg-zinc-300 w-full flex flex-col items-center cursor-default">
+       <Link className="-translate-x-[28vw] translate-y-5 absolute bg-blue-500 py-2 px-4 rounded text-white active:scale-75 duration-100 transition-all" onClick={()=>navigate(-1)}><button className='font-bold text-lg '>Back</button></Link> 
       <h1 className="text-[10vw] md:text-[3.5vw] font-semibold tracking-tighter">
         About Me
       </h1>

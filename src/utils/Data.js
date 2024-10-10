@@ -5,6 +5,7 @@ import img4 from "../../public/obyes website.png"
 import img5 from "../../public/sidecup website.png"
 import img6 from "../../public/two good co.png"
 import img7 from "../../public/weight.webp"
+import img8 from "../../public/gptSearch.png"
 
 export const projectData = [
 {
@@ -59,9 +60,9 @@ export const projectData = [
 },
 {
     id:8,
-    image: '',
-    link:'' ,
-    title:" Coming soon...",
+    image: img8,
+    link:'https://netflixgptsearch-xi.vercel.app/' ,
+    title:"NetflixGPT",
     category:"web"
 },
 ]
